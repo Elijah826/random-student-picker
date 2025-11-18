@@ -5,7 +5,8 @@ const button = document.querySelector("button");
 const nameDisplay = document.querySelector("p");
 
 button.addEventListener("click", () => {
-  console.log(getRandomIntInclusive(0, data.length - 1));
+  nameDisplay.textContent =
+    data[getRandomIntInclusive(0, data.length - 1)].name;
 });
 
 function getRandomIntInclusive(min, max) {
