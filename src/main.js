@@ -15,13 +15,11 @@ button.addEventListener("click", () => {
 darkModeRadio.addEventListener("change", () => {
   body.classList.remove("bg-yellow-500");
   body.classList.add("bg-gray-800", "text-white");
-  console.log("Dark mode selected");
 });
 
 lightModeRadio.addEventListener("change", () => {
   body.classList.remove("bg-gray-800", "text-white");
   body.classList.add("bg-yellow-500");
-  console.log("Light mode selected");
 });
 
 function getRandomIntInclusive(min, max) {
